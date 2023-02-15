@@ -29,7 +29,6 @@ onBeforeUnmount(() => {
 });
 
 const fetchData = async () => {
-  console.log("fetching data")
   const url = `https://api.zonda.exchange/rest/trading/orderbook-limited/${currencyPair.value}/10`
   const response = await fetch(url , {
     method: "GET",

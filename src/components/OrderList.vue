@@ -12,7 +12,7 @@
   <div class="order-list" :class="header">
     <h2>{{ header }}</h2>
     <div class="order-list__orders">
-      <Order v-for="(order, index) in orders" :key="index" :order="order" />
+      <Order v-for="(order, index) in orders" :key="order.ra" :order="order" />
     </div>
   </div>
 </template>
